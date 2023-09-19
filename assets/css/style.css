@@ -7,33 +7,33 @@
 body {
     background-color: #d9dcd6;
 }
-
-.header {
+/*changed to header selector to reflect change in html */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
-
-.header h1 {
+/*changed to header selector to reflect change in html */
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-/* use nav for specificity*/
-.nav {
+/* use nav for specificity to reflect change in html*/
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-/* use nav for specificity*/
-.nav ul {
+/* use nav for specificity to reflect change in html*/
+nav ul {
     list-style-type: none;
 }
-/* use nav for specificity*/
-.nav ul li {
+/* use nav for specificity to reflect change in html*/
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -56,7 +56,7 @@ p {
 }
 */
 
-.hero {
+.heroImage {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -83,6 +83,8 @@ p {
 }
 
 .benefits {
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -92,32 +94,38 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/*text-align center*/
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
+    text-align: center;
 }
-
+/*text-align center*/
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
+    text-align: center;
 }
-
+/*text-align center*/
 .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
+    text-align: center;
 }
 
+/*
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
+*/
 
+/*
 .benefit-brand h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
+*/
 .benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -194,14 +202,14 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
-.footer {
+/*used footer selector since there is only one footer, no need for class or ID designation */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h3 {
     font-size: 20px;
 }
